@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es-BO">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dr. Limbert Ortega Álvarez — Radiografías a domicilio 24/7</title>
+  <meta name="description" content="Dr. Limbert Ortega Álvarez. Radiografías a domicilio, en clínicas y durante cirugías en Cochabamba y alrededores. Atención 24/7, equipo calibrado, resultados rápidos. Escríbenos por WhatsApp." />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Dr. Limbert Ortega Álvarez — Radiología a domicilio 24/7" />
+  <meta property="og:description" content="Radiografías a domicilio, en clínicas y durante cirugías en Cochabamba y alrededores. Atención 24/7." />
+  <meta property="og:locale" content="es_BO" />
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalBusiness",
+    "name": "Dr. Limbert Ortega Álvarez — Radiología Móvil",
+    "founder": "Limbert Ortega Álvarez",
+    "description": "Servicio de radiología móvil a domicilio, en clínicas y durante cirugías.",
+    "areaServed": ["Cochabamba", "Quillacollo", "Sacaba", "Tiquipaya", "Vinto", "Colcapirhua"],
+    "openingHours": "Mo-Su 00:00-23:59",
+    "telephone": "+59167444106"
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%23050b16'/%3E%3Ccircle cx='50' cy='50' r='40' fill='none' stroke='%2300d4ff' stroke-width='3' stroke-dasharray='2 6'/%3E%3Cg transform='rotate(45 50 50)'%3E%3Crect x='47' y='20' width='6' height='60' rx='3' fill='%2300d4ff'/%3E%3Ccircle cx='44' cy='20' r='5' fill='%2300d4ff'/%3E%3Ccircle cx='56' cy='20' r='5' fill='%2300d4ff'/%3E%3Ccircle cx='44' cy='80' r='5' fill='%2300d4ff'/%3E%3Ccircle cx='56' cy='80' r='5' fill='%2300d4ff'/%3E%3C/g%3E%3Cg transform='rotate(-45 50 50)'%3E%3Crect x='47' y='20' width='6' height='60' rx='3' fill='%2300d4ff'/%3E%3Ccircle cx='44' cy='20' r='5' fill='%2300d4ff'/%3E%3Ccircle cx='56' cy='20' r='5' fill='%2300d4ff'/%3E%3Ccircle cx='44' cy='80' r='5' fill='%2300d4ff'/%3E%3Ccircle cx='56' cy='80' r='5' fill='%2300d4ff'/%3E%3C/g%3E%3C/svg%3E" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Loader inicial corto (se oculta solo, ver script.js) -->
+  <div class="loader" data-hidden="false" aria-hidden="true">
+    <svg class="loader__ecg" viewBox="0 0 220 60">
+      <path d="M0 30 L50 30 L60 10 L70 50 L80 30 L220 30" />
+    </svg>
+  </div>
+
+  <!-- ============ HEADER / LOGO ============ -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="#inicio" aria-label="Limbert Ortega Álvarez — inicio">
+        <span class="brand__badge" aria-hidden="true">
+          <svg class="brand__svg" viewBox="0 0 120 120">
+            <circle class="brand__ring-dash" cx="60" cy="60" r="52" />
+            <circle class="brand__ring" cx="60" cy="60" r="44" />
+            <g class="brand__bones">
+              <g transform="rotate(45 60 60)">
+                <rect x="57" y="26" width="6" height="68" rx="3" />
+                <circle cx="54" cy="26" r="6" /><circle cx="66" cy="26" r="6" />
+                <circle cx="54" cy="94" r="6" /><circle cx="66" cy="94" r="6" />
+              </g>
+              <g transform="rotate(-45 60 60)">
+                <rect x="57" y="26" width="6" height="68" rx="3" />
+                <circle cx="54" cy="26" r="6" /><circle cx="66" cy="26" r="6" />
+                <circle cx="54" cy="94" r="6" /><circle cx="66" cy="94" r="6" />
+              </g>
+            </g>
+          </svg>
+        </span>
+        <span class="brand__text">
+          <span class="brand__name">Limbert Ortega <span class="brand__accent">Álvarez</span></span>
+          <span class="brand__tag">Radiología</span>
+        </span>
+      </a>
+      <a class="btn btn--ghost btn--sm" data-wa-link href="#" target="_blank" rel="noopener">
+        <span class="btn-label-full">Agenda tu estudio →</span>
+        <span class="btn-label-short">Agendar →</span>
+      </a>
+    </div>
+  </header>
+
+  <div class="cursor-halo" aria-hidden="true"></div>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="inicio">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <canvas class="particles-canvas" aria-hidden="true"></canvas>
+
+    <div class="container hero__grid">
+      <div>
+        <span class="eyebrow boot-in" style="animation-delay:0ms">Cochabamba y alrededores</span>
+        <h1 class="hero__title boot-in" style="animation-delay:90ms">
+          Radiología a domicilio, <span class="accent">24/7</span>,<br />
+          donde la necesites
+        </h1>
+        <p class="hero__subtitle boot-in" style="animation-delay:220ms">
+          En tu casa, en la clínica o en quirófano. Equipo propio, resultados en minutos.
+        </p>
+        <a class="btn btn--primary boot-in" style="animation-delay:340ms" data-wa-link href="#" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.6.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-1.6-.8-2.7-1.4-3.8-3.2-.1-.2 0-.4.1-.5.2-.2.5-.5.6-.7.1-.2.1-.4 0-.6-.1-.2-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.2-.9.9-.9 2.2 0 1.3 1 2.6 1.1 2.8.1.2 1.7 2.7 4.3 3.7 2.1.8 2.5.6 3-.4.4-.8.4-1.5.3-1.6Z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.4c1.4.8 3.1 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2Zm0 18c-1.5 0-3-.4-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3C4.4 15 4 13.5 4 12c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8Z"/></svg>
+          Escríbenos por WhatsApp
+        </a>
+      </div>
+
+      <div class="xray-frame xray-frame--boot" id="xrayFrame" tabindex="0" role="img" aria-label="Pasa el mouse o toca para ver el efecto de escaneo sobre la radiografía">
+        <img class="xray-frame__normal" src="assets/equipos/rayos-x-mano-real.png" alt="Radiografía real de mano" loading="eager" />
+        <img class="xray-frame__scan" src="assets/equipos/rayos-x-mano-real.png" alt="" aria-hidden="true" loading="eager" />
+        <div class="xray-frame__scanline" aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STATS ============ -->
+  <section class="stats">
+    <div class="container stats__row" id="statsRow">
+      <!-- Generado desde CONFIG.stats si se desea editar vía JS; valores también visibles aquí -->
+      <div class="stat">
+        <div class="stat__value" data-counter="30" data-suffix=" min">0</div>
+        <div class="stat__label">Tiempo de respuesta promedio</div>
+      </div>
+      <div class="stat">
+        <div class="stat__value" data-counter="5000" data-suffix="+">0</div>
+        <div class="stat__label">Estudios realizados</div>
+      </div>
+      <div class="stat">
+        <div class="stat__value is-urgent" data-counter="24" data-suffix="/7">0</div>
+        <div class="stat__label">Disponibilidad, también emergencias</div>
+      </div>
+      <div class="stat">
+        <div class="stat__value" data-counter="98" data-suffix="%">0</div>
+        <div class="stat__label">Clientes satisfechos</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICIOS ============ -->
+  <section id="servicios">
+    <div class="container">
+      <span class="eyebrow reveal">Servicios</span>
+      <h2 class="section-title reveal" data-reveal-delay="60">Radiología donde la necesites</h2>
+
+      <div class="services__grid">
+        <div class="card reveal" data-tilt data-reveal-delay="0">
+          <div class="card__icon">🏠</div>
+          <h3 class="card__title">A domicilio</h3>
+          <p class="card__text">Sin moverte de casa.</p>
+        </div>
+        <div class="card reveal" data-tilt data-reveal-delay="60">
+          <div class="card__icon">🏥</div>
+          <h3 class="card__title">Clínicas</h3>
+          <p class="card__text">Para las que no tienen equipo propio.</p>
+        </div>
+        <div class="card reveal" data-tilt data-reveal-delay="120">
+          <div class="card__icon">🔬</div>
+          <h3 class="card__title">Cirugías</h3>
+          <p class="card__text">Control en tiempo real, en quirófano.</p>
+        </div>
+        <div class="card reveal" data-tilt data-reveal-delay="180">
+          <div class="card__icon">🚨</div>
+          <h3 class="card__title">Urgencias</h3>
+          <p class="card__text">24/7, todos los días del año.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EQUIPOS ============ -->
+  <section id="equipos">
+    <div class="container">
+      <span class="eyebrow reveal">Equipos</span>
+      <h2 class="section-title reveal" data-reveal-delay="60">Tecnología que vamos a tu encuentro</h2>
+
+      <div class="equip-feature reveal">
+        <div class="equip-feature__img">
+          <img src="assets/equipos/rayos-x-portatil.jpg" alt="Equipo de rayos X portátil TecMedical" loading="lazy" />
+          <span class="equip-feature__badge">2 años de garantía</span>
+        </div>
+        <div class="equip-feature__body">
+          <h3 class="equip__name">Rayos X Portátil — TecMedical / iRay Technology</h3>
+          <p class="equip__use">Domicilio, clínicas y quirófano</p>
+          <ul class="equip-feature__list">
+            <li>Portátil, 16 kg</li>
+            <li>Cable o control remoto inalámbrico</li>
+            <li>Bluetooth a computadora</li>
+          </ul>
+          <div class="spec-table">
+            <div><span>Rango kV</span><strong>40 – 125 kVp</strong></div>
+            <div><span>Rango mAs</span><strong>0,1 – 100</strong></div>
+            <div><span>Rango mA</span><strong>10 – 100 mA</strong></div>
+            <div><span>Tamaño</span><strong>370 × 350 × 230 mm</strong></div>
+            <div><span>Peso</span><strong>16 kg</strong></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CÓMO FUNCIONA ============ -->
+  <section id="como-funciona">
+    <div class="container">
+      <span class="eyebrow reveal">Cómo funciona</span>
+      <h2 class="section-title reveal" data-reveal-delay="60">Cuatro pasos, sin complicaciones</h2>
+
+      <div class="timeline">
+        <div class="timeline__step reveal">
+          <div class="timeline__num">01</div>
+          <h3 class="card__title">Escríbenos</h3>
+          <p class="card__text">Por WhatsApp, qué y dónde.</p>
+        </div>
+        <div class="timeline__step reveal" data-reveal-delay="60">
+          <div class="timeline__num">02</div>
+          <h3 class="card__title">Confirmamos</h3>
+          <p class="card__text">Precio y hora, al toque.</p>
+        </div>
+        <div class="timeline__step reveal" data-reveal-delay="120">
+          <div class="timeline__num">03</div>
+          <h3 class="card__title">Vamos</h3>
+          <p class="card__text">Puntuales, equipo listo.</p>
+        </div>
+        <div class="timeline__step reveal" data-reveal-delay="180">
+          <div class="timeline__num">04</div>
+          <h3 class="card__title">Resultados</h3>
+          <p class="card__text">Imágenes e informe, rápido.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COBERTURA ============ -->
+  <section id="cobertura">
+    <div class="container">
+      <span class="eyebrow reveal">Zonas de cobertura</span>
+      <h2 class="section-title reveal" data-reveal-delay="60">Cochabamba y alrededores</h2>
+
+      <div class="coverage__map reveal" data-reveal-delay="120">
+        <div class="coverage__sweep" aria-hidden="true"></div>
+        <svg class="coverage__lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+          <path class="coverage__ridge" d="M0,22 L9,13 16,19 24,8 32,17 41,6 49,15 58,7 66,16 75,9 84,15 92,10 100,14 100,0 0,0 Z" />
+          <line class="coverage__road" x1="52" y1="52" x2="26" y2="55" />
+          <line class="coverage__road" x1="52" y1="52" x2="38" y2="66" />
+          <line class="coverage__road" x1="52" y1="52" x2="11" y2="62" />
+          <line class="coverage__road" x1="52" y1="52" x2="34" y2="39" />
+          <line class="coverage__road" x1="52" y1="52" x2="79" y2="50" />
+        </svg>
+
+        <div class="coverage__pin coverage__pin--main" style="top: 52%; left: 52%;">
+          <span class="coverage__dot coverage__dot--main"></span>
+          <span class="coverage__label coverage__label--main">Cochabamba</span>
+        </div>
+        <div class="coverage__pin" style="top: 55%; left: 26%;">
+          <span class="coverage__dot"></span><span class="coverage__label">Quillacollo</span>
+        </div>
+        <div class="coverage__pin" style="top: 66%; left: 38%;">
+          <span class="coverage__dot"></span><span class="coverage__label">Colcapirhua</span>
+        </div>
+        <div class="coverage__pin" style="top: 62%; left: 11%;">
+          <span class="coverage__dot"></span><span class="coverage__label">Vinto</span>
+        </div>
+        <div class="coverage__pin" style="top: 39%; left: 34%;">
+          <span class="coverage__dot"></span><span class="coverage__label">Tiquipaya</span>
+        </div>
+        <div class="coverage__pin" style="top: 50%; left: 79%;">
+          <span class="coverage__dot"></span><span class="coverage__label">Sacaba</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONFIANZA ============ -->
+  <section id="confianza">
+    <div class="container">
+      <span class="eyebrow reveal">Por qué elegirnos</span>
+      <h2 class="section-title reveal" data-reveal-delay="60">Confianza clínica, trato cercano</h2>
+
+      <div class="trust__grid">
+        <div class="trust__item reveal">
+          <span class="trust__icon">✓</span>
+          <div><h3 class="card__title">Protección radiológica</h3><p class="card__text">Dosis mínima, protocolo seguro.</p></div>
+        </div>
+        <div class="trust__item reveal" data-reveal-delay="60">
+          <span class="trust__icon">✓</span>
+          <div><h3 class="card__title">Equipo calibrado</h3><p class="card__text">Calibración periódica.</p></div>
+        </div>
+        <div class="trust__item reveal" data-reveal-delay="120">
+          <span class="trust__icon">✓</span>
+          <div><h3 class="card__title">Puntualidad</h3><p class="card__text">A la hora acordada, siempre.</p></div>
+        </div>
+        <div class="trust__item reveal" data-reveal-delay="180">
+          <span class="trust__icon">✓</span>
+          <div><h3 class="card__title">Atención cercana</h3><p class="card__text">Sin tecnicismos, trato humano.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <div class="container" style="max-width: 760px;">
+      <span class="eyebrow reveal">Preguntas frecuentes</span>
+      <h2 class="section-title reveal" data-reveal-delay="60">Dudas comunes</h2>
+
+      <details class="faq__item reveal">
+        <summary>¿Atienden de verdad las 24 horas?<span class="faq__icon">+</span></summary>
+        <div class="faq__panel"><p>Sí, incluyendo fines de semana y feriados, también para emergencias.</p></div>
+      </details>
+      <details class="faq__item reveal" data-reveal-delay="40">
+        <summary>¿A qué zonas llegan?<span class="faq__icon">+</span></summary>
+        <div class="faq__panel"><p>Cochabamba y alrededores: Quillacollo, Sacaba, Tiquipaya, Vinto y Colcapirhua.</p></div>
+      </details>
+      <details class="faq__item reveal" data-reveal-delay="80">
+        <summary>¿Cuánto tarda el resultado?<span class="faq__icon">+</span></summary>
+        <div class="faq__panel"><p>En la mayoría de los casos entregamos la placa digital y el informe en minutos.</p></div>
+      </details>
+      <details class="faq__item reveal" data-reveal-delay="120">
+        <summary>¿Pueden ir a una cirugía?<span class="faq__icon">+</span></summary>
+        <div class="faq__panel"><p>Sí, ofrecemos control intraoperatorio con arco en C dentro de quirófano.</p></div>
+      </details>
+      <details class="faq__item reveal" data-reveal-delay="160">
+        <summary>¿Cómo coordino el servicio?<span class="faq__icon">+</span></summary>
+        <div class="faq__panel"><p>Escríbenos por WhatsApp, te confirmamos precio y horario al momento.</p></div>
+      </details>
+    </div>
+  </section>
+
+  <!-- ============ CTA FINAL ============ -->
+  <section class="cta-final">
+    <div class="container">
+      <h2 class="section-title reveal">¿Necesitas una radiografía ahora?</h2>
+      <p class="section-sub reveal" data-reveal-delay="60">Coordinamos de inmediato, incluso en emergencias.</p>
+      <a class="btn btn--primary reveal" data-reveal-delay="120" data-wa-link href="#" target="_blank" rel="noopener">Escríbenos por WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer>
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand">Dr. Limbert Ortega Álvarez</div>
+          <p class="card__text" style="margin-top: 8px; max-width: 280px;">Radiología móvil a domicilio, en clínicas y cirugías.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Contacto</h4>
+          <a data-wa-link href="#" target="_blank" rel="noopener">WhatsApp: +591 67444106</a>
+          <a href="https://instagram.com/usuario" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://facebook.com/usuario" target="_blank" rel="noopener">Facebook</a>
+        </div>
+        <div class="footer__col">
+          <h4>Horario</h4>
+          <p>Abierto 24/7</p>
+          <p>Incluye emergencias</p>
+        </div>
+      </div>
+      <div class="footer__bottom">© 2026 Dr. Limbert Ortega Álvarez. Todos los derechos reservados.</div>
+    </div>
+  </footer>
+
+  <a class="fab-whatsapp" data-wa-link href="#" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.6.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-1.6-.8-2.7-1.4-3.8-3.2-.1-.2 0-.4.1-.5.2-.2.5-.5.6-.7.1-.2.1-.4 0-.6-.1-.2-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.2-.9.9-.9 2.2 0 1.3 1 2.6 1.1 2.8.1.2 1.7 2.7 4.3 3.7 2.1.8 2.5.6 3-.4.4-.8.4-1.5.3-1.6Z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.4c1.4.8 3.1 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2Zm0 18c-1.5 0-3-.4-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3C4.4 15 4 13.5 4 12c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8Z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
